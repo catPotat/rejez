@@ -50,7 +50,7 @@ function playRandomKK (check = false) {
 function playRain () {
   if (rainSound) rainSound.unload()
   rainSound = new Howl({
-    src: [`https://s3.us-east-2.amazonaws.com/chrome-nook/rain/rain.ogg`],
+    src: [`https://d17orwheorv96d.cloudfront.net/rain/rain.ogg`],
     loop: true,
     volume: 0
   })
