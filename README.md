@@ -30,8 +30,6 @@ Nook is a simple Chrome/Firefox extension that plays the music and hourly themes
 | Add rain checkbox and volume slider.                                                                           | Low      | Done        |
 | Add snowy/rainy versions.                                                                                      | Normal   | Done        |
 | Add grandfather mode.                                                                                          | Low      | Done        |
-| Add town tune feature to be played inbetween song transitions.                                                 | Low      | TBD         |
-| Add random shuffling select box and toggle.                                                                    | Low      | TBD         |
 
 This is a passion project and is not affiliated with Nintendo whatsoever.
 Music sampled is owned by Nintendo Co., Ltd and composed by Kazumi Totaka.
