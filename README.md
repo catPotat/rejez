@@ -30,6 +30,7 @@ Nook is a simple Chrome/Firefox extension that plays the music and hourly themes
 | Add rain checkbox and volume slider.                                                                           | Low      | Done        |
 | Add snowy/rainy versions.                                                                                      | Normal   | Done        |
 | Add grandfather mode.                                                                                          | Low      | Done        |
+| Add New Horizons option and host music files.                                                                                          | High      | Done        |
 | Auto Pause when playing external audio                                                                         | Low      | TBD         |
 
 This is a passion project and is not affiliated with Nintendo whatsoever.
