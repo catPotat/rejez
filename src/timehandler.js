@@ -47,9 +47,7 @@ function kkSliderCheck () {
 
 function playRandomKK (check = false) {
   if (kkSongs.length < 1) return
-  var song = `${kkSongs[~~(Math.random() * kkSongs.length)]}`
-  playSong(song+`.mp3`, globalHours, true)
-  return song
+  playSong(`${kkSongs[~~(Math.random() * kkSongs.length)]}.mp3`, globalHours, true)
 }
 
 function playRain () {
