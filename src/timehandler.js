@@ -95,6 +95,7 @@ function pauseSound () {
     chrome.browserAction.setBadgeText({ 'text': '' })
     chrome.runtime.sendMessage({ 'nowPlaying': 'Nothing!' })
     nowPlaying = 'Nothing!'
+    chrome.browserAction.setTitle({title:'Nook | Now Playing: '+nowPlaying});
   })
 }
 
@@ -114,13 +115,21 @@ function playSound (name, hour, kk) {
     }
   })
   name = name.replace('.mp3', '')
+  nowPlaying = name
+  if(!kk) {
+    gameSplit = game.toLowerCase().split('-');
+    for (var i = 0; i < gameSplit.length; i++) {
+      gameSplit[i] = (i == 2 ? "[" : "")+gameSplit[i].charAt(0).toUpperCase() + gameSplit[i].slice(1)+(i == 2 ? "]" : "");
+    }
+    nowPlaying+=" ("+gameSplit.join(' ')+")"
+  }
   sound.play()
   sound.fade(0, volume, fade)
   playing = true
-  chrome.runtime.sendMessage({ 'nowPlaying': name })
-  nowPlaying = name
+  chrome.runtime.sendMessage({ 'nowPlaying': nowPlaying })
   chrome.browserAction.setBadgeBackgroundColor({ 'color': badgeColors[hour || name] })
   chrome.browserAction.setBadgeText({ 'text': '♫' })
+  chrome.browserAction.setTitle({title:'Nook | Now Playing: '+nowPlaying});
 }
 
 // Ticks every second and checks the hour
