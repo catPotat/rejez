@@ -13,6 +13,13 @@ button#stateToggle[state="pause"] {
   background-repeat: no-repeat;
 }
 
+.thumbButton#patreon {
+  left: 45px;
+  background-image: url(../images/patreon.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
 span.offscreen {
   left: -1000px;
   position: absolute;
@@ -247,15 +254,15 @@ a {
   font-weight: bold;
 }
 
-.kkSliderSonglistPage, .grandfatherModeHoursPage {
+.kkSliderSonglistPage, .grandfatherModeHoursPage, .supportersPage {
   display: none;
 }
 
-.kkSliderSonglistPage.active, .grandfatherModeHoursPage.active {
+.kkSliderSonglistPage.active, .grandfatherModeHoursPage.active, .supportersPage.active {
   display: block;
 }
 
-.kkSliderSonglistPage .content, .grandfatherModeHoursPage .content {
+.kkSliderSonglistPage .content, .grandfatherModeHoursPage .content, .supportersPage.content {
   text-align: unset;
 }
 
@@ -272,4 +279,50 @@ button.checkButtons {
 
 .kkSliderSonglistPage .content .buttonContainer, .grandfatherModeHoursPage .content .buttonContainer {
   text-align: center;
+}
+
+#supporters {
+  background-image: url(../images/white-sparkle.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffff3d !important;
+  display: block;
+  width: max-content;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  margin-left: 39%;
+}
+
+.gold span {
+  background-image: url(../images/white-sparkle.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #d1ff96;
+}
+
+.silver span {
+  color: #dafaff;
+}
+
+.bronze span {
+  color: #ebbc8c;
+}
+.bronze {
+  margin-bottom: 18px;
+}
+
+.gold h2 {
+  color: #ffed00;
+}
+
+.silver h2 {
+  color: #baf5ff;
+}
+
+.bronze h2 {
+  color: #e7a968;
+}
+
+.supportersPage span {
+  padding: 0 3px;
 }
