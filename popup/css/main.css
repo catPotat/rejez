@@ -19,6 +19,9 @@ button#stateToggle[state="pause"] {
   background-size: 20px;
   background-repeat: no-repeat;
 }
+.thumbButton.youtube {
+  background-image: url(../images/yt.png) !important;
+}
 
 span.offscreen {
   left: -1000px;
@@ -52,7 +55,7 @@ body {
   padding: 7px;
   margin:1px;
   font-family: 'Open Sans';
-  background: url(../images/bg.jpg);
+  background: url(../images/bg.jpg) center;
   background-repeat: repeat;
   color:#fff;
   height: fit-content;

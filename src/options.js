@@ -1,5 +1,5 @@
-// Default game is New Leaf
-let game = 'new-leaf'
+// Default game is new-horizons
+let game = 'new-horizons'
 let volume = 1.0
 let rainVolume = 0
 
